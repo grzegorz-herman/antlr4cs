@@ -251,8 +251,8 @@ namespace Antlr4.Tool
             //format.EnableCache = AntlrTool.EnableTemplateCache;
             if (!File.Exists(fileName))
             {
-                RawError("ANTLR installation corrupted; cannot find ANTLR messages format file " + fileName);
-                Panic();
+                var embedded = new Uri($"pack://application:,,,antlr.stg");
+                format = new TemplateGroupFile(embedded, Encoding.UTF8, '<', '>');
             }
             //else if (url == null)
             //{

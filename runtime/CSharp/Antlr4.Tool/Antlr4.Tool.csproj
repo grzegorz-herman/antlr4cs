@@ -74,10 +74,10 @@
       <Link>Tool\Templates\LeftRecursiveRules.stg</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\..\reference\antlr4\tool\resources\org\antlr\v4\tool\templates\messages\formats\antlr.stg">
+    <EmbeddedResource Include="..\..\..\reference\antlr4\tool\resources\org\antlr\v4\tool\templates\messages\formats\antlr.stg">
       <Link>Tool\Templates\Messages\Formats\antlr.stg</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    </EmbeddedResource>
     <None Include="..\..\..\reference\antlr4\tool\resources\org\antlr\v4\tool\templates\messages\formats\gnu.stg">
       <Link>Tool\Templates\Messages\Formats\gnu.stg</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
